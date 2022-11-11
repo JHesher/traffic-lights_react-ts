@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './App.scss';
 
+type Colors = 'red' | 'yellow' | 'green';
+
 function App() {
-  const [activeColor, setActiveColor] = useState('');
-  const trafficLightColors = ['red', 'yellow', 'green'];
+  const [activeColor, setActiveColor] = useState<Colors | null>(null);
+  const trafficLightColors: Colors[] = ['red', 'yellow', 'green'];
 
   function turnOn() {
     let index = 0;
