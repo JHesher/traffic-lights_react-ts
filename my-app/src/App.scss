@@ -1,0 +1,33 @@
+.trafficLight {
+  background-color: black;
+  width: 50px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 10px;
+}
+.trafficLight span {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* animation: red 5s linear infinite */
+  /* animation-fill-mode: forwards; */
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.gray {
+  background-color: gray;
+}
